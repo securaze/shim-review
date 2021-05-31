@@ -11,7 +11,7 @@ Make sure you have provided the following information:
 
 
 ###### What organization or people are asking to have this signed:
-SECURAZE AG - based in Switzerland
+SECURAZE GmbH based in Vienna, Austria
 
 ###### What product or service is this for:
 SECURAZE Work & Command
@@ -90,7 +90,7 @@ N/A
 No, only GRUB2 used.
 
 ###### What kernel are you using? Which patches does it includes to enforce Secure Boot?
-Stock Linux Kernel 5.11.7
+Stock Linux Kernel 5.12.8 with all required Secure Boot patches
 
 ###### What changes were made since your SHIM was last signed?
 N/A - first submission
