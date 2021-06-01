@@ -36,7 +36,7 @@ Yes
 Not used.
 
 ###### Is kernel upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 present in your kernel, if you boot chain includes a Linux kernel ?
-Yes, we are using Kernel 5.11.7 that has commit 75b0cea7bf307f362057cc778efe89af4c615354 embedded
+Yes, we are using Kernel 5.12.8 that has commit 75b0cea7bf307f362057cc778efe89af4c615354 embedded
 
 ###### if SHIM is loading GRUB2 bootloader, are CVEs CVE-2020-14372,
 ###### CVE-2020-25632, CVE-2020-25647, CVE-2020-27749, CVE-2020-27779,
