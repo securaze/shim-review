@@ -1,13 +1,19 @@
 Make sure you have provided the following information:
 
  - [ ] link to your code branch cloned from rhboot/shim-review in the form user/repo@tag
- - [ ] completed README.md file with the necessary information
- - [ ] shim.efi to be signed
- - [ ] public portion of your certificate(s) embedded in shim (the file passed to VENDOR_CERT_FILE)
+ - [X] completed README.md file with the necessary information
+    https://github.com/securaze/shim-review/blob/master/README.md
+ - [x] shim.efi to be signed
+    https://github.com/securaze/shim-review/blob/master/shimx64.efi
+ - [x] public portion of your certificate(s) embedded in shim (the file passed to VENDOR_CERT_FILE)
+    https://github.com/securaze/shim-review/blob/master/certificate/codesign_ev_2021.cer
  - [ ] binaries, for which hashes are added do vendor_db ( if you use vendor_db and have hashes allow-listed )
- - [ ] any extra patches to shim via your own git tree or as files
+ - [x] any extra patches to shim via your own git tree or as files
+    https://github.com/richiesecuraze/shim/releases/tag/15.4.sec1
  - [ ] any extra patches to grub via your own git tree or as files
- - [ ] build logs
+ - [X] build logs
+    https://github.com/securaze/shim-review/blob/master/buildlog.txt
+
 
 
 ###### What organization or people are asking to have this signed:
@@ -50,7 +56,9 @@ Yes, we are using Debian downstream GRUB2
 ###### "Please specifically confirm that you add a vendor specific SBAT entry for SBAT header in each binary that supports SBAT metadata
 ###### ( grub2, fwupd, fwupdate, shim + all child shim binaries )" to shim review doc ?
 ###### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim
-`[your text here]`
+sbat 	1 	SBAT Version 	sbat 	1 	https://github.com/rhboot/shim/blob/main/SBAT.md
+shim 	1 	UEFI shim 	shim 	1 	https://github.com/rhboot/shim
+shim.securaze 	1 	Securaze 	shim 	15.4 	https://www.securaze.com/shim
 
 ##### Were your old SHIM hashes provided to Microsoft ?
 No, this is our first submission.
@@ -84,7 +92,7 @@ N/A - only launching the Linux kernel.
 ###### apply. Please describe your strategy.
 N/A
 ###### How do the launched components prevent execution of unauthenticated code?
-`[your text here]`
+Stock Debian GRUB2 and Upstream Kernel with all relevant patches enabled
 
 ###### Does your SHIM load any loaders that support loading unsigned kernels (e.g. GRUB)?
 No, only GRUB2 used.
@@ -96,4 +104,4 @@ Stock Linux Kernel 5.12.8 with all required Secure Boot patches
 N/A - first submission
 
 ###### What is the SHA256 hash of your final SHIM binary?
-`[your text here]`
+b3a877887a3965483aa9bcc267f5b9e1ae9eb25986ec99d57ca40efd5234ee48
